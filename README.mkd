@@ -25,6 +25,8 @@ Login as
 ####Version 0.1
 - Initial release
 - .gitignore added
+
 ###Resources
+
 - [Yii framework](http://www.yiiframework.com/)
 - [Github repo](https://github.com/dmtrs/blog)  
