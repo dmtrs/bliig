@@ -1,5 +1,5 @@
-( not found proper name yet )
-=============================
+bliig
+=====
 Yii powered blog engine.
 
 ###Details

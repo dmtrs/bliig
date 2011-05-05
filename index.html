@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>bliig readme page</title>
+        <style type='text/css'>
+            .code-block
+            {
+                background-color: #E9E9E9;
+                display: block;
+                margin: 1em;
+            }
+        </style>
+	</head>
+<body>
+    <h1>bliig</h1>
+
+    <p>Yii powered blog engine.</p>
+
+    <h3>Details</h3>
+
+    <h3>Description</h3>
+
+    <p>This is a blog engine based on the plain blog demo of yii. This an effort to create a real usefull and usable, for the end users, blog engine.</p>
+
+    <h3>Instructions</h3>
+
+    <p>Clone the project from the repository:</p>
+
+    <pre class='code-block'><code>
+    git clone https://dmtrs@github.com/dmtrs/blog.git
+    </code></pre>
+
+    <p>Make the following local <strong>copies</strong></p>
+
+    <pre class='code-block'><code>
+    blog/protected/data/_blog.db    ~&gt; blog/protected/data/blog.db
+    blog/protected/config/_main.php ~&gt; blog/protected/config/main.php
+    blog/_index.php                 ~&gt; blog/index.php
+    blog/_index-test.php            ~&gt; blog/index-test.php
+    </code></pre>
+
+    <p><code>main.php</code> does not need any special configuration. 
+    In the <code>index.php</code> &amp; <code>index-test.php</code> you must config the <code>$yii</code> to point to the</p>
+
+    <pre><code>path/to/yii/framework/yii.php
+    </code></pre>
+
+    <p>as well set the default date timezone with something like:</p>
+
+    <pre><code>date_default_timezone_set('Europe/Athens');
+    </code></pre>
+
+    <p>Login as</p>
+
+    <pre class='code-block'><code>
+    Username: demo
+    Password: demo
+    </code></pre>
+
+    <h3>Requirements</h3>
+
+    <h3>Changelog</h3>
+
+    <h4>Version 0.1.1</h4>
+
+    <ul>
+    <li>Webapplication tree structure added</li>
+    </ul>
+
+    <h4>Version 0.1</h4>
+
+    <ul>
+        <li>Initial release</li>
+        <li>.gitignore added</li>
+    </ul>
+
+    <h3>Resources</h3>
+
+    <ul>
+        <li><a href="http://www.yiiframework.com/">Yii framework</a></li>
+        <li><a href="https://github.com/dmtrs/blog">Github repo</a>  </li>
+    </ul>
+<body>
