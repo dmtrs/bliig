@@ -7,19 +7,19 @@ Yii powered blog engine.
 This is a blog engine based on the plain blog demo of yii. This an effort to create a real usefull and usable, for the end users, blog engine.
 ###Instructions
 Clone the project from the repository:
-<code>
+
     git clone https://dmtrs@github.com/dmtrs/blog.git
-</code>
+
 Make the following local __copies__
-<code>
+
     blog/protected/data/_blog.db ~> blog/protected/data/blog.db
     blog/protected/config/main.php ~> blog/protected/config/main.php
-</code>
+
 Login as 
-<code>
+
     Username: demo
     Password: demo
-</code>    
+
 ###Requirements
 ###Changelog
 ####Version 0.1
