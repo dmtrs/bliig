@@ -2,4 +2,3 @@ protected/config/main.php
 protected/data/blog.db
 index.php
 index-test.php
-protected/runtime/.
