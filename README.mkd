@@ -1,0 +1,14 @@
+( not found proper name yet )
+=============================
+Yii powered blog engine.
+
+This is a blog engine based on the plain blog demo of yii. This an effort to create a real usefull and usable, for the end users, blog engine.
+###Requirements
+###Details
+###Description
+###Changelog
+####Version 0.1
+- Initial release
+###Resources
+- [yii framework](http://www.yiiframework.com/)
+- [github repository](https://github.com/dmtrs/blog)  
