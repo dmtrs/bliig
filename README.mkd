@@ -33,6 +33,7 @@ Login as
 ###Requirements
 ###Changelog
 ####Version 0.1.1
+- Fixing the forgotten things from my blog:
 - Webapplication tree structure added
 
 ####Version 0.1
