@@ -23,7 +23,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo" style='position: absolute;'><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div id="logo" ><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
