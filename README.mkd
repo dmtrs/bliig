@@ -18,11 +18,14 @@ Make the following local __copies__
     blog/_index-test.php            ~> blog/index-test.php
 
 <code>main.php</code> does not need any special configuration. 
-In the <code>index.php</code> & <code>index-test.php</code> you must config the <code>$yii</code> to point to the 
+In the <code>index.php</code> & <code>index-test.php</code> you must config the <code>$yii</code> to point to the
+
     path/to/yii/framework/yii.php
 as well set the default date timezone with something like:
+
     date_default_timezone_set('Europe/Athens');   
-Login as 
+Login as
+
     Username: demo
     Password: demo
 
@@ -31,6 +34,7 @@ Login as
 ###Changelog
 ####Version 0.1.1
 - Webapplication tree structure added
+
 ####Version 0.1
 - Initial release
 - .gitignore added
