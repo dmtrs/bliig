@@ -12,16 +12,25 @@ Clone the project from the repository:
 
 Make the following local __copies__
 
-    blog/protected/data/_blog.db ~> blog/protected/data/blog.db
-    blog/protected/config/main.php ~> blog/protected/config/main.php
+    blog/protected/data/_blog.db    ~> blog/protected/data/blog.db
+    blog/protected/config/_main.php ~> blog/protected/config/main.php
+    blog/_index.php                 ~> blog/index.php
+    blog/_index-test.php            ~> blog/index-test.php
 
+<code>main.php</code> does not need any special configuration. 
+In the <code>index.php</code> & <code>index-test.php</code> you must config the <code>$yii</code> to point to the 
+    path/to/yii/framework/yii.php
+as well set the default date timezone with something like:
+    date_default_timezone_set('Europe/Athens');   
 Login as 
-
     Username: demo
     Password: demo
 
+
 ###Requirements
 ###Changelog
+####Version 0.1.1
+- Webapplication tree structure added
 ####Version 0.1
 - Initial release
 - .gitignore added
