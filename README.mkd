@@ -28,7 +28,8 @@ Login as
 
     Username: demo
     Password: demo
-
+####Init.sh 
+There is an initliazation script named <code>init.sh</code> in the root folder of bliig tree structure that does all the above copy work for you.
 
 ###Requirements
 ###Changelog
