@@ -1,0 +1,55 @@
+##Installation instructions
+###Requirements
+###Installation
+####Get
+Clone the project from the repository:
+
+    git clone https://dmtrs@github.com/dmtrs/blog.git
+
+
+####Database
+For the database creation there 2 ready to sql code files under the protected/data/ folder
+
+    protected/data/schema.mysql.sql
+    protected/data/schema.sqlite.sql
+
+For mysql database execute the sql queries that there are in schema.mysql.sql or use something like 
+ 
+  cat schema.mysql.sql | mysql -u root -p
+
+__Notification:__ The database name by default is bliig. Edit <code>schema.mysql.sql</code> to alter name of database.
+For sqlite3 database 
+
+    protected/data/_blog.db ~> protected/data/blog.db
+
+or use the <code>dbgen.php</code> script like 
+
+    cd protected/data
+    php dbgen.php
+
+####Configuration    
+Make the following local __copies__
+
+    blog/protected/config/_main.php ~> blog/protected/config/main.php
+    blog/_index.php                 ~> blog/index.php
+    blog/_index-test.php            ~> blog/index-test.php
+
+For the <code>main.php</code> does not need any special configuration, just set the blog name under the variable 
+<code>name</code>.
+Set the connection string as well.
+
+####Index
+    
+In the <code>index.php</code> & <code>index-test.php</code> you must config the <code>$yii</code> to point to the
+
+    path/to/yii/framework/yii.php
+as well set the default date timezone with something like:
+
+    date_default_timezone_set('Europe/Athens');
+####Info    
+Login as
+
+    Username: demo
+    Password: demo
+####Init.sh 
+UPDATE: There is an initliazation script named <code>init.sh</code> in the root folder of bliig tree structure that does all the above copy work for you.
