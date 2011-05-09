@@ -5,32 +5,12 @@ Yii powered blog engine.
 ###Details
 ###Description
 This is a blog engine based on the plain blog demo of yii. This an effort to create a real usefull and usable, for the end users, blog engine.
-###Instructions
+###Installation
 Clone the project from the repository:
 
     git clone https://dmtrs@github.com/dmtrs/blog.git
 
-Make the following local __copies__
-
-    blog/protected/data/_blog.db    ~> blog/protected/data/blog.db
-    blog/protected/config/_main.php ~> blog/protected/config/main.php
-    blog/_index.php                 ~> blog/index.php
-    blog/_index-test.php            ~> blog/index-test.php
-
-<code>main.php</code> does not need any special configuration. 
-In the <code>index.php</code> & <code>index-test.php</code> you must config the <code>$yii</code> to point to the
-
-    path/to/yii/framework/yii.php
-as well set the default date timezone with something like:
-
-    date_default_timezone_set('Europe/Athens');   
-Login as
-
-    Username: demo
-    Password: demo
-####Init.sh 
-There is an initliazation script named <code>init.sh</code> in the root folder of bliig tree structure that does all the above copy work for you.
-
+and check the <code>docs/INSTALLATION.mkd</code> or check it online at [Installation](https://github.com/dmtrs/bliig/blob/master/docs/INSTALLATION.mkd).
 ###Requirements
 ###Changelog
 ####Version 0.1.1
