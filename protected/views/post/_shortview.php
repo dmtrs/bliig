@@ -16,6 +16,7 @@
                 'stoli'=>'icons/stoli.png',
                 'spam'=>'icons/spam.png',
                 'git'=>'icons/git.png',
+                'gem'=>'icons/gem.png',
             ),
             'replace'=>'(isset($data[$el])) ? "<img src=\''.Yii::app()->request->baseUrl.'/".$data[$el]."\' />" : null;'          
         ));?>
