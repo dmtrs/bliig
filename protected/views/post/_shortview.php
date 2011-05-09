@@ -2,22 +2,7 @@
 	<div class="title">
         <?php $this->beginWidget('ext.EReplacer', array(
             'bag'=>'{}',
-            'data'=>array(
-                'yii'=>'icons/yii32.png',
-                'ext'=>'icons/widget.png',
-                'wiki'=>'icons/wiki.png',
-                'cli'=>'icons/terminal.png',
-                'f14'=>'icons/fedora.png',
-                'cen'=>'icons/centos.png',
-                'cult'=>'icons/cult.png',
-                'mysql'=>'icons/mysql.png',
-                'java'=>'icons/java.png',
-                'nb'=>'icons/netbeans.png',
-                'stoli'=>'icons/stoli.png',
-                'spam'=>'icons/spam.png',
-                'git'=>'icons/git.png',
-                'gem'=>'icons/gem.png',
-            ),
+            'data'=>Yii::app()->params['icons'],
             'replace'=>'(isset($data[$el])) ? "<img src=\''.Yii::app()->request->baseUrl.'/".$data[$el]."\' />" : null;'          
         ));?>
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
