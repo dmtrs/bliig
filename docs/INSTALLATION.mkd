@@ -31,6 +31,7 @@ or use the <code>dbgen.php</code> script like
 Make the following local __copies__
 
     blog/protected/config/_main.php ~> blog/protected/config/main.php
+    blog/protected/config/_params.php ~> blog/protected/config/params.php
     blog/_index.php                 ~> blog/index.php
     blog/_index-test.php            ~> blog/index-test.php
 
