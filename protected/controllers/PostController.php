@@ -38,7 +38,7 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('index','view','captcha'),
+				'actions'=>array('index','view','captcha', 'preview'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions
@@ -82,7 +82,17 @@ class PostController extends Controller
 			'model'=>$model,
 		));
 	}
-
+    public function actionPreview()
+    {
+		$model=new Post;
+		if(isset($_POST['Post']))
+		{
+			$model->attributes=$_POST['Post'];
+		}
+		$this->renderPartial('_preview',array(
+			'data'=>$model,
+		));
+	}
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.

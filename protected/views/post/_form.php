@@ -55,8 +55,17 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::ajaxSubmitButton('Preview', $this->createUrl('post/preview'), array('update'=>'#preview'), array(
+            'onclick'=>'$("#preview").dialog("open")')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<?php $this->widget('zii.widgets.jui.CJuiDialog', array(
+    'id'=>'preview',
+    'options'=>array(
+        'title'=>'Preview',
+        'autoOpen'=>true,
+    )
+));?>
