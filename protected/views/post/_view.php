@@ -40,16 +40,26 @@ if($data->imgs) {
     );
     Yii::app()->clientScript->registerCss('fancybox-imgs', 
     '
+    .thumb 
+    {
+        border: 1px solid;
+        float: left;
+        margin: 0.5em;
+        padding: 0.3em 0.3em 0.6em;
+    }
     .fsmall
     { 
         height: 32px; 
+        float: left;
     }
     .fnormal
     {
         height: 64px;
+        float: left;
     }
     .fbig
     {
         height: 128px;
+        float: left;
     }');
 }
