@@ -44,7 +44,7 @@ if($data->imgs) {
     {
         border: 1px solid;
         float: left;
-        margin: 0.5em;
+        margin: 0em 0.5em;
         padding: 0.3em 0.3em 0.6em;
     }
     .fsmall
