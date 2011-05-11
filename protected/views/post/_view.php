@@ -7,6 +7,15 @@
         ));?>
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
         <?php $this->endWidget(); ?>
+
+        <?php if(!Yii::app()->user->isGuest) {
+            echo CHtml::link(
+                CHtml::image(Yii::app()->request->baseUrl."/protected/data/16/page_edit.png", 
+                    'Edit',
+                    array('style'=>'float: right;',)
+                ), $this->createUrl('update', array('id'=>$data->id))); 
+        } ?>
+
 	</div>
 	<div class="author">
 		posted by <?php echo $data->author->username . ' on ' . date('F j, Y',$data->create_time); ?>

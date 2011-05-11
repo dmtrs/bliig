@@ -69,9 +69,9 @@
     'options'=>array(
         'title'=>'Preview',
         'autoOpen'=>false,
-        'width'=>'60%',
-        'height'=>'auto',
+        'width'=>'80%',
+        'height'=>'600',
         'modal'=>true,
-        'position'=>'top',
-    )
+        //'position'=>'top',
+    ),
 ));?>
