@@ -55,8 +55,10 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-		<?php echo CHtml::ajaxSubmitButton('Preview', $this->createUrl('post/preview'), array('update'=>'#preview'), array(
-            'onclick'=>'$("#preview").dialog("open")')); ?>
+		<?php echo CHtml::ajaxSubmitButton('Preview', $this->createUrl('post/preview'), array(
+            'success'=>'function(data) {
+                    $("#preview").html(data).dialog("open");
+            }')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
@@ -66,6 +68,10 @@
     'id'=>'preview',
     'options'=>array(
         'title'=>'Preview',
-        'autoOpen'=>true,
+        'autoOpen'=>false,
+        'width'=>'60%',
+        'height'=>'auto',
+        'modal'=>true,
+        'position'=>'top',
     )
 ));?>
