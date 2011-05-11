@@ -40,9 +40,13 @@ if($data->imgs) {
     );
     Yii::app()->clientScript->registerCss('fancybox-imgs', 
     '
+    a .fancybox
+    {
+        border: 0;
+    }
     .thumb 
     {
-        border: 1px solid;
+        border: 0.5px solid;
         float: left;
         margin: 0em 0.5em;
         padding: 0.3em 0.3em 0.6em;
