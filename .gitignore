@@ -1,3 +1,4 @@
+protected/modules
 protected/config/main.php
 protected/data/blog.db
 protected/config/params.php
