@@ -13,16 +13,20 @@ $this->menu=array(
 );
 ?>
 
-<h1>View User #<?php echo $model->id; ?></h1>
+<h1><?php echo $model->username; ?> user profile</h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
 		'username',
-		'password',
-		'salt',
 		'email',
 		'profile',
 	),
+)); ?>
+<br/>
+<h2>Post</h2>
+<?php $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$postProvider,
+    'itemView'=>'/post/_shortview',
+    'template'=>"{items}\n{pager}",
 )); ?>

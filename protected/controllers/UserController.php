@@ -50,8 +50,21 @@ class UserController extends Controller
 	 */
 	public function actionView($id)
 	{
+        $model = $this->loadModel($id);
+
+        $criteria = new CDbCriteria(array(
+            'order'=>'update_time DESC',
+            'with'=>'commentCount',
+        ));
+        $criteria->compare('status', Post::STATUS_PUBLISHED, true);
+        $criteria->compare('author_id', $model->id, true);
+        
+
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
+            'postProvider'=>new CActiveDataProvider('Post', array(
+                'criteria'=>$criteria,
+            )),
 		));
 	}
 
