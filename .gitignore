@@ -3,5 +3,5 @@ protected/config/main.php
 protected/data/blog.db
 protected/config/params.php
 icons/
-index.php
+/index.php
 index-test.php
