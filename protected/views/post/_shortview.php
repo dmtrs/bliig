@@ -17,7 +17,7 @@
         } ?>
 	</div>
 	<div class="author">
-		posted by <?php echo $data->author->username . ' on ' . date('F j, Y',$data->create_time); ?>
+		posted by <?php echo CHtml::link($data->author->username, $this->createUrl('user/view',array('id'=>$data->author->id))) . ' on ' . date('F j, Y',$data->create_time); ?>
 	</div>
 	<div class="content">
 		<?php
