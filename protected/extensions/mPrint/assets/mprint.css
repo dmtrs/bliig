@@ -1,0 +1,20 @@
+.grid-view
+{
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%
+}
+
+.grid-view th,.grid-view td
+{
+    border:1px solid #ddd;
+    padding: 0.3em 0.6em;
+    vertical-align: top;
+}
+
+.grid-view th
+{
+    text-align: right;
+    /*width: 160px;*/
+    font-size: .8em;
+}
