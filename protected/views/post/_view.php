@@ -8,13 +8,15 @@
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
         <?php $this->endWidget(); ?>
 
+        <div class='row admin-actions' style='float: right;' >
         <?php if(!Yii::app()->user->isGuest) {
             echo CHtml::link(
                 CHtml::image(Yii::app()->request->baseUrl."/data/16/page_edit.png", 
-                    'Edit',
-                    array('style'=>'float: right;',)
+                    'Edit'
+//                    ,array('style'=>'float: right;',)
                 ), $this->createUrl('update', array('id'=>$data->id))); 
         } ?>
+        </div>
 
 	</div>
 	<div class="author">
@@ -38,6 +40,7 @@
 		<?php echo CHtml::link('Permalink', $data->url); ?> |
 		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> |
 		Last updated on <?php echo date('F j, Y',$data->update_time); ?>
+        
 	</div>
 </div>
 <?php

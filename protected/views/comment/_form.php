@@ -1,5 +1,5 @@
 <div class="form">
-
+	<h3>Leave a Comment</h3>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'comment-form',
 	'enableAjaxValidation'=>true,

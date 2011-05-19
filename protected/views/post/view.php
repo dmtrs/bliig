@@ -5,11 +5,28 @@ $this->breadcrumbs=array(
 $this->pageTitle=$model->title;
 ?>
 
+<div class='row' style='float: right' >
+<?php 
+$this->widget('ext.mPrint.mPrint', array(
+    'tooltip'=>'Print post',
+    //'text'=>'Print post',
+    'element'=>'#content',
+    'exceptions'=>array(
+        '#mprint',
+        '.form',
+        '.admin-actions',
+    ),
+    'publishCss'=>true,
+    'alt'=>'print',
+    'id'=>'mprint',
+)); ?>
+</div>
+
 <?php $this->renderPartial('_view', array(
 	'data'=>$model,
 )); ?>
 
-<div id="comments">
+<div id="comments" >
 	<?php if($model->commentCount>=1): ?>
 		<h3>
 			<?php echo $model->commentCount>1 ? $model->commentCount . ' comments' : 'One comment'; ?>
@@ -20,8 +37,6 @@ $this->pageTitle=$model->title;
 			'comments'=>$model->comments,
 		)); ?>
 	<?php endif; ?>
-
-	<h3>Leave a Comment</h3>
 
 	<?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
 		<div class="flash-success">
@@ -34,3 +49,4 @@ $this->pageTitle=$model->title;
 	<?php endif; ?>
 
 </div><!-- comments -->
+
