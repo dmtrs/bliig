@@ -4,4 +4,7 @@ cp -v ./protected/config/_main.php ./protected/config/main.php
 cp -v ./protected/config/_params.php ./protected/config/params.php
 cp -v ./_index.php ./index.php
 cp -v ./_index-test.php ./index-test.php
+
 chmod -R 777 ./protected/data/
+chmod -R 777 ./assets/
+chmod -R 777 ./protected/runtime/
