@@ -12,16 +12,6 @@ Clone the project from the repository:
 
 and check the <code>docs/INSTALLATION.mkd</code> or check it online at [Installation](https://github.com/dmtrs/bliig/blob/master/docs/INSTALLATION.mkd).
 ###Requirements
-###Changelog
-####Version 0.1.1
-- Update post for authenticated users added
-- Print add ( use of mPrint extension )  
-- Fixing the forgotten things from my blog:
-- Webapplication tree structure added
-
-####Version 0.1
-- Initial release
-- .gitignore added
 
 ###Resources
 
