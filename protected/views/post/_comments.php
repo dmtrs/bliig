@@ -15,7 +15,10 @@
 	</div>
 
 	<div class="content">
-		<?php echo nl2br(CHtml::encode($comment->content)); ?>
+        <?php $this->beginWidget('CMarkDown'); ?>
+		<?php //echo nl2br(CHtml::encode($comment->content)); ?>
+		<?php echo $comment->content; ?>
+        <?php $this->endWidget(); ?>
 	</div>
 
 </div><!-- comment -->
